@@ -74,8 +74,8 @@ export default function Home() {
 
       <main>
         <div className="logo">
-          <img src="/google.png" alt="google logo" />
-          <img className="shadow" src="/google.png" alt="google logo" />
+          <img src="/GUSD_Logo.png" alt="google logo" />
+          <img className="shadow" src="/GUSD_Logo.png" alt="google logo" />
         </div>
         <div className="searchContainer">
           <form onSubmit={search} className="search" ref={searchBox}>
