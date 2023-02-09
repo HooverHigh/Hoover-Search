@@ -49,11 +49,11 @@ export default function Home() {
       </Head>
 
       <header>
-        <span style={hiddenStyle}>
-          <button className="sidebarToggle icon" onClick={openSidebar}>
+        <span>
+          <button className="sidebarToggle icon" onClick={openSidebar} style={hiddenStyle}>
             <MenuAlt1Icon />
           </button>
-          <ul className="nav">
+          <ul className="nav" style={hiddenStyle}>
             <li>Images</li>
             <li>Videos</li>
             <li>News</li>
