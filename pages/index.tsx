@@ -13,8 +13,18 @@ export default function Home() {
   const searchInput = useRef(null);
   const searchBox = useRef(null);
 
+  if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") == true) {
+    appDiv.current.classList.add('dark');
+    toggleSwitch.current.classList.add('dark');
+  };
+  
   const toggleTheme = (e: any) => {
     e.preventDefault();
+    if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") == true) {
+      localStorage.setItem("darkmode", false);
+    } else {
+      localStorage.setItem("darkmode", true);
+    };
     appDiv.current.classList.toggle('dark');
     toggleSwitch.current.classList.toggle('dark');
   };
