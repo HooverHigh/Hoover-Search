@@ -13,7 +13,7 @@ export default function Home() {
   const searchInput = useRef(null);
   const searchBox = useRef(null);
 
-  if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") == true) {
+  if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") === true) {
     appDiv.current.classList.add('dark');
     toggleSwitch.current.classList.add('dark');
   };
