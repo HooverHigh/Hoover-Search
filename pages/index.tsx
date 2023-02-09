@@ -33,6 +33,8 @@ export default function Home() {
       router.push(`/search?q=${query}`);
     }
   };
+  
+  /* Sidebar: <Sidebar ref={sidebarRef} /> */
 
   return (
     <div className="app" ref={appDiv}>
@@ -45,7 +47,6 @@ export default function Home() {
       </Head>
 
       <header>
-        <Sidebar ref={sidebarRef} style="display: none;" />
         <span style="display: none;">
           <button className="sidebarToggle icon" onClick={openSidebar}>
             <MenuAlt1Icon />
