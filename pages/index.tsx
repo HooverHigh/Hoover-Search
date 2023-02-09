@@ -4,11 +4,6 @@ import { useRouter } from 'next/router';
 import React, { useRef } from 'react';
 import Apps from '../components/Apps';
 import Sidebar from '../components/Sidebar';
-import ScriptTag from 'react-script-tag';
-
-const Demo = props => (
-<ScriptTag type="text/javascript" src="/theme.js" />
-)
 
 export default function Home() {
   const router = useRouter();
