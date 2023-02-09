@@ -18,17 +18,21 @@ export default function Home() {
   const searchInput = useRef(null);
   const searchBox = useRef(null);
 
-  if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
-    appDiv.current.classList.add('dark');
-    toggleSwitch.current.classList.add('dark');
+  if (typeof window !== 'undefined') {
+    if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
+      appDiv.current.classList.add('dark');
+      toggleSwitch.current.classList.add('dark');
+    };
   };
   
   const toggleTheme = (e: any) => {
     e.preventDefault();
-    if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
-      localStorage.setItem("theme", "light");
-    } else {
-      localStorage.setItem("theme", "dark");
+    if (typeof window !== 'undefined') {
+      if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
+        localStorage.setItem("theme", "light");
+      } else {
+        localStorage.setItem("theme", "dark");
+      };
     };
     appDiv.current.classList.toggle('dark');
     toggleSwitch.current.classList.toggle('dark');
