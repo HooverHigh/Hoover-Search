@@ -28,12 +28,12 @@ const Apps = () => {
         <ViewGridIcon />
       </button>
       <div className="apps__list">
-        <a target="_blank" href="https://assistant.google.com">
+        <a target="_blank" href="https://gusd.net">
           <img
-            src="https://lh3.googleusercontent.com/Iyn9yCCDxgHqvjX5jMZ_looun-kL0Sk60FraoMU5-JQG2WstyK6QNzj3JguQRbvQmWqVBSoO88Oh1kGQAoXMPkIIEF0pQrvXL52XXw=h120"
-            alt="assistant"
+            src="/GUSD_Logo.png"
+            alt="gusd"
           />
-          <span>Assistant</span>
+          <span>GUSD</span>
         </a>
         <a target="_blank" href="https://meet.google.com">
           <img
