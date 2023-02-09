@@ -21,9 +21,9 @@ export default function Home() {
   const toggleTheme = (e: any) => {
     e.preventDefault();
     if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
-      localStorage.setItem("theme", false);
+      localStorage.setItem("theme", "light");
     } else {
-      localStorage.setItem("theme", true);
+      localStorage.setItem("theme", "dark");
     };
     appDiv.current.classList.toggle('dark');
     toggleSwitch.current.classList.toggle('dark');
