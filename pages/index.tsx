@@ -13,17 +13,17 @@ export default function Home() {
   const searchInput = useRef(null);
   const searchBox = useRef(null);
 
-  if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") === true) {
+  if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
     appDiv.current.classList.add('dark');
     toggleSwitch.current.classList.add('dark');
   };
   
   const toggleTheme = (e: any) => {
     e.preventDefault();
-    if (localStorage.getItem("darkmode") && localStorage.getItem("darkmode") == true) {
-      localStorage.setItem("darkmode", false);
+    if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
+      localStorage.setItem("theme", false);
     } else {
-      localStorage.setItem("darkmode", true);
+      localStorage.setItem("theme", true);
     };
     appDiv.current.classList.toggle('dark');
     toggleSwitch.current.classList.toggle('dark');
