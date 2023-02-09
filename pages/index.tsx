@@ -15,8 +15,8 @@ export default function Home() {
 
   if (typeof window !== 'undefined') {
     if (localStorage.getItem("theme") && localStorage.getItem("theme") == "dark") {
-      appDiv.current.classList.add('dark');
-      toggleSwitch.current.classList.add('dark');
+      appDiv.current.classList.toggle('dark');
+      toggleSwitch.current.classList.toggle('dark');
     };
   };
   
