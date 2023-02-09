@@ -45,8 +45,8 @@ export default function Home() {
       </Head>
 
       <header>
-        <Sidebar ref={sidebarRef} />
-        <span>
+        <!--<Sidebar ref={sidebarRef} />-->
+        <span style="display: none;">
           <button className="sidebarToggle icon" onClick={openSidebar}>
             <MenuAlt1Icon />
           </button>
@@ -63,7 +63,7 @@ export default function Home() {
             <MoonIcon className="moon" />
           </div>
           <Apps />
-          <div className="user">
+          <div className="user" style="display: none;">
             <UserCircleIcon />
             <span className="uid">
               <span className="top">My Account</span>
@@ -74,8 +74,8 @@ export default function Home() {
 
       <main>
         <div className="logo">
-          <img src="/GUSD_Logo.png" alt="google logo" />
-          <img className="shadow" src="/GUSD_Logo.png" alt="google logo" />
+          <img src="/GUSD_Logo.png" alt="gusd logo" />
+          <img className="shadow" src="/GUSD_Logo.png" alt="gusd logo" />
         </div>
         <div className="searchContainer">
           <form onSubmit={search} className="search" ref={searchBox}>
@@ -92,7 +92,7 @@ export default function Home() {
               <SearchIcon className="searchIcon" />
             </button>
           </form>
-          <button className="lucky">
+          <button className="lucky" style="display: none;">
             <SparklesIcon />
             Feeling Lucky?
           </button>
