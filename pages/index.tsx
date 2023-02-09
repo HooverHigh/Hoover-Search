@@ -35,6 +35,8 @@ export default function Home() {
   };
   
   /* Sidebar: <Sidebar ref={sidebarRef} /> */
+  
+  const hiddenStyle = { display: "none" };
 
   return (
     <div className="app" ref={appDiv}>
@@ -47,7 +49,7 @@ export default function Home() {
       </Head>
 
       <header>
-        <span style="display: none;">
+        <span style={hiddenStyle}>
           <button className="sidebarToggle icon" onClick={openSidebar}>
             <MenuAlt1Icon />
           </button>
@@ -64,7 +66,7 @@ export default function Home() {
             <MoonIcon className="moon" />
           </div>
           <Apps />
-          <div className="user" style="display: none;">
+          <div className="user" style={hiddenStyle}>
             <UserCircleIcon />
             <span className="uid">
               <span className="top">My Account</span>
@@ -93,7 +95,7 @@ export default function Home() {
               <SearchIcon className="searchIcon" />
             </button>
           </form>
-          <button className="lucky" style="display: none;">
+          <button className="lucky" style={hiddenStyle}>
             <SparklesIcon />
             Feeling Lucky?
           </button>
