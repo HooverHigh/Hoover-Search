@@ -41,6 +41,8 @@
   z-index: 9;
   overflow: auto;
   /*transform: translateY(-1rem) translateX(-50%);*/
+  left: auto;
+    right: -0.5rem;
   opacity: 0;
   pointer-events: none;
 }
