@@ -28,7 +28,7 @@
 .apps__list {
   position: absolute;
   top: calc(100% + 1rem);
-  /*left: -150%;*/
+  left: -150%;
   background: var(--white);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
@@ -40,9 +40,8 @@
   max-height: calc(100vh - 9rem);
   z-index: 9;
   overflow: auto;
-  /*transform: translateY(-1rem) translateX(-50%);*/
+  transform: translateY(-1rem) translateX(-50%);
   left: auto;
-    right: -0.5rem;
   opacity: 0;
   pointer-events: none;
 }
