@@ -23,6 +23,7 @@ jobs:
     - name: Build
       run: |
         npm install
-        npx browserslist@latest --update-db
+        npm install next@latest
         npm install --save-dev @types/react
+        npx browserslist@latest --update-db
         npm run export
